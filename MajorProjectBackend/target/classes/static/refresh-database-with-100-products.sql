@@ -1,9 +1,6 @@
 -- -----------------------------------------------------
 -- Schema MajorProject
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `MajorProject`;
-
-CREATE SCHEMA `MajorProject`;
 USE `MajorProject` ;
 
 -- -----------------------------------------------------
