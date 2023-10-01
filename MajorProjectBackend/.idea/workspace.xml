@@ -5,15 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54d032c6-fa49-4d25-a19f-c31b24589559" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/config/MyAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/config/MyDataRestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/controller/CheckoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dao/CountryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dao/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dao/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dao/ProductCategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dao/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dao/StateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dto/Purchase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dto/PurchaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/entity/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/entity/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/entity/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/entity/ProductCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/entity/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/service/CheckoutService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/service/CheckoutServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/02-create-products.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/02-create-products.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/03-countries-and-states.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/03-countries-and-states.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/04-create-order-tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/04-create-order-tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/assets/placeholder.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -40,14 +67,18 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/resources/static",
+    "last_opened_file_path": "/home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.pradeep.MajorProjectBackend.dto" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
     </key>
   </component>
