@@ -1,4 +1,4 @@
-USE `full-stack-ecommerce`;
+USE `MajorProject`;
 
 SET foreign_key_checks = 0;
 

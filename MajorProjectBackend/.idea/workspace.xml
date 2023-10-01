@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54d032c6-fa49-4d25-a19f-c31b24589559" name="Changes" comment="" />
+    <list default="true" id="54d032c6-fa49-4d25-a19f-c31b24589559" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/02-create-products.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/02-create-products.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/03-countries-and-states.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/03-countries-and-states.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/04-create-order-tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/04-create-order-tables.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +28,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2W9j787bWAGiHsFfNs38wGahWxl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,12 +40,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/pilli007/Documents/MajorProject/MajorProjectBackend/MajorProjectBackend",
+    "last_opened_file_path": "/home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/resources/static",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
