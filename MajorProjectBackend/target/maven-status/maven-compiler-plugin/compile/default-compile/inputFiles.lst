@@ -1,1 +1,26 @@
+<<<<<<< HEAD
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/MajorProjectBackendApplication.java
+=======
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/config/MyAppConfig.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/entity/Address.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dao/CustomerRepository.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/MajorProjectBackendApplication.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dao/ProductRepository.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/entity/Customer.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dao/StateRepository.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/entity/Product.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/entity/Order.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dao/ProductCategoryRepository.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dto/Purchase.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/service/CheckoutService.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/controller/CheckoutController.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/entity/ProductCategory.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/entity/OrderItem.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/config/MyDataRestConfig.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dto/PurchaseResponse.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/entity/State.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dao/OrderRepository.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/entity/Country.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/service/CheckoutServiceImpl.java
+/home/pilli007/Desktop/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dao/CountryRepository.java
+>>>>>>> 5a344d2 (main)

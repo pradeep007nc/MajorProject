@@ -96,6 +96,18 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "a5b6062c-aa44-4222-bd7f-24a11956bd5e"
+=======
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+    "analytics": "39ff0b83-4958-4d2f-9d2f-e4d296f83802"
+=======
+    "analytics": "a5b6062c-aa44-4222-bd7f-24a11956bd5e"
+>>>>>>> refs/remotes/origin/main
+=======
+    "analytics": "39ff0b83-4958-4d2f-9d2f-e4d296f83802"
+>>>>>>> Stashed changes
+>>>>>>> 5a344d2 (main)
   }
 }
