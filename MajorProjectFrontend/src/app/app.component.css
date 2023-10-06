@@ -1,0 +1,29 @@
+/* footer */
+footer ul li a{
+  color:#fff
+}
+footer{
+  background:#232324;
+  z-index:1;
+  position:relative;
+  text-align:center
+}
+footer li a{
+  color:#313131;
+  font-weight:500
+}
+footer ul li{
+  display:inline-block;
+  font-size:14px;
+  padding:10px 20px
+}
+
+
+
+/* aside */
+aside.menu-sidebar.d-none.d-lg-block.clr{
+  background:0 0;
+  z-index:99999999;
+  height:75px;
+  box-shadow:-2px 0 4px #0000003b
+}
