@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ProductsComponent } from './components/products/products.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 
 
 
@@ -12,6 +14,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     ProductCategoryMenuComponent,
+    ProductsComponent,
+    ProductListComponent,
   ],
   imports: [
     BrowserModule,
