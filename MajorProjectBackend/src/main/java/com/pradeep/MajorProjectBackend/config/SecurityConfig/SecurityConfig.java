@@ -20,19 +20,20 @@ public class SecurityConfig {
     private final UserAuthenticationEntryPoint userAuthenticationEntryPoint;
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception{
+    public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .exceptionHandling(customizer -> customizer.authenticationEntryPoint(userAuthenticationEntryPoint))
                 .addFilterBefore(new JwtAuthFilter(userAuthProvider), BasicAuthenticationFilter.class)
                 .csrf(AbstractHttpConfigurer::disable)
-                .addFilterBefore(new JwtAuthFilter(userAuthProvider), BasicAuthenticationFilter.class)
                 .sessionManagement(customizer -> customizer.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .authorizeHttpRequests((requests) -> requests.requestMatchers(HttpMethod.POST, "/login", "register").
-                        permitAll()
-                        .anyRequest()
-                        .authenticated()
+                .authorizeHttpRequests(requests ->
+                        requests
+                                .requestMatchers("/api/checkout/purchase").authenticated()  // Secure only /purchase endpoint
+                                .anyRequest().permitAll()  // Allow unauthenticated access to other endpoints
                 );
+
         return httpSecurity.build();
     }
+
 
 }

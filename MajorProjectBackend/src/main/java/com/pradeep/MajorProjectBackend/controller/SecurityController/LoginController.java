@@ -1,10 +1,10 @@
 package com.pradeep.MajorProjectBackend.controller.SecurityController;
 
-import com.pradeep.dev.springBackend.Config.UserAuthProvider;
-import com.pradeep.dev.springBackend.Dto.CredentialsDto;
-import com.pradeep.dev.springBackend.Dto.SignupDto;
-import com.pradeep.dev.springBackend.Dto.UserDto;
-import com.pradeep.dev.springBackend.Services.UserService;
+import com.pradeep.MajorProjectBackend.config.SecurityConfig.UserAuthProvider;
+import com.pradeep.MajorProjectBackend.dto.SecuirtyDto.CredentialsDto;
+import com.pradeep.MajorProjectBackend.dto.SecuirtyDto.SignupDto;
+import com.pradeep.MajorProjectBackend.dto.SecuirtyDto.UserDto;
+import com.pradeep.MajorProjectBackend.service.SecurityUserService.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

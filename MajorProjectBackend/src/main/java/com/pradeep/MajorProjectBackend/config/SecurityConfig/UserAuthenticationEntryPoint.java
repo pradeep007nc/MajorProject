@@ -2,7 +2,7 @@ package com.pradeep.MajorProjectBackend.config.SecurityConfig;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pradeep.dev.springBackend.Dto.ErrorDto;
+import com.pradeep.MajorProjectBackend.dto.SecuirtyDto.ErrorDto;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

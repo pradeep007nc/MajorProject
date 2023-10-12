@@ -1,6 +1,7 @@
 package com.pradeep.MajorProjectBackend.dao.SecurityRepo;
 
-import com.pradeep.dev.springBackend.Entities.User;
+
+import com.pradeep.MajorProjectBackend.entity.SecurityUser.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

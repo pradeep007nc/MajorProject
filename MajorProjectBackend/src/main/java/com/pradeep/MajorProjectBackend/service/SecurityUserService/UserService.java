@@ -1,12 +1,12 @@
 package com.pradeep.MajorProjectBackend.service.SecurityUserService;
 
-import com.pradeep.dev.springBackend.Dto.CredentialsDto;
-import com.pradeep.dev.springBackend.Dto.SignupDto;
-import com.pradeep.dev.springBackend.Dto.UserDto;
-import com.pradeep.dev.springBackend.Entities.User;
-import com.pradeep.dev.springBackend.Exceptions.AppException;
-import com.pradeep.dev.springBackend.Mappers.UserMapper;
-import com.pradeep.dev.springBackend.Repositories.UserRepository;
+import com.pradeep.MajorProjectBackend.Exceptions.AppException;
+import com.pradeep.MajorProjectBackend.Mappers.UserMapper;
+import com.pradeep.MajorProjectBackend.dao.SecurityRepo.UserRepository;
+import com.pradeep.MajorProjectBackend.dto.SecuirtyDto.CredentialsDto;
+import com.pradeep.MajorProjectBackend.dto.SecuirtyDto.SignupDto;
+import com.pradeep.MajorProjectBackend.dto.SecuirtyDto.UserDto;
+import com.pradeep.MajorProjectBackend.entity.SecurityUser.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;

@@ -1,8 +1,8 @@
 package com.pradeep.MajorProjectBackend.Mappers;
 
-import com.pradeep.dev.springBackend.Dto.SignupDto;
-import com.pradeep.dev.springBackend.Dto.UserDto;
-import com.pradeep.dev.springBackend.Entities.User;
+import com.pradeep.MajorProjectBackend.dto.SecuirtyDto.SignupDto;
+import com.pradeep.MajorProjectBackend.dto.SecuirtyDto.UserDto;
+import com.pradeep.MajorProjectBackend.entity.SecurityUser.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
