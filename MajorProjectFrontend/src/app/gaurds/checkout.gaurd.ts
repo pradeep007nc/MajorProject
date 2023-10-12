@@ -20,4 +20,5 @@ export class CheckoutGuard implements CanActivate {
     }
     return true;
   }
+
 }

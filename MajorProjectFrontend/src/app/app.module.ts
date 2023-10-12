@@ -15,16 +15,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartStatusComponent } from './components/cart-status/cart-status.component';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { MembersComponent } from './components/members/members.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CheckoutGuard } from './gaurds/checkout.gaurd';
-
+import { CommonModule } from '@angular/common';
 
 //defining the routes
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
+  {path: 'members', component: MembersComponent, canActivate: [CheckoutGuard]},
   {path: 'checkout', component: CheckoutComponent, canActivate: [CheckoutGuard]},
   {path: 'cart-details', component: CartDetailsComponent},
   {path: 'products/:id', component: ProductDetailsComponent},
@@ -56,6 +57,8 @@ const routes: Routes = [
     HttpClientModule,
     NgbModule,
     ReactiveFormsModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [ProductService, CheckoutGuard],
   bootstrap: [AppComponent]
