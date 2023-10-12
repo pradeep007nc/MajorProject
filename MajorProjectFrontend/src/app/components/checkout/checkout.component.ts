@@ -4,7 +4,6 @@ import { Country } from './../../common/country';
 import { ShopFormService } from './../../services/shop-form.service';
 import { Component, OnInit, numberAttribute } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, FormGroupName, Validators } from '@angular/forms';
-import { FormsModule } from '@angular/forms';
 import { State } from 'src/app/common/state';
 import { CartService } from 'src/app/services/cart.service';
 import { CustomValidators } from 'src/app/validators/custom-validators';
