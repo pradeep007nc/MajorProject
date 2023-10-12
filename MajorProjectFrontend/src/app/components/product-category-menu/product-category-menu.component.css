@@ -1,0 +1,28 @@
+.menu-sidebar {
+  background-color: #000; /* Replace with your preferred black color */
+  color: #fff; /* Set text color to white or any other contrasting color */
+  padding: 15px; /* Add padding as needed */
+}
+
+/* Add styles for each product category */
+.navbar-sidebar ul.list-unstyled.navbar-list li {
+  margin-bottom: 10px; /* Adjust spacing between categories */
+}
+
+.navbar-sidebar ul.list-unstyled.navbar-list li a {
+  color: #fff; /* Set text color for category links */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Make links full width */
+  padding: 8px; /* Add padding to links */
+  border-radius: 5px; /* Add rounded corners to links */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.navbar-sidebar ul.list-unstyled.navbar-list li a:hover {
+  background-color: #555; /* Change background color on hover */
+}
+
+.navbar-sidebar ul.list-unstyled.navbar-list li a.active-link {
+  background-color: #333;
+  font-weight: bold;
+}

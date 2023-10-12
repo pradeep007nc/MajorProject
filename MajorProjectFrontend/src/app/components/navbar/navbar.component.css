@@ -1,0 +1,18 @@
+/* Navbar styles to match the color scheme */
+.navbar {
+  background-color: #000; /* Set the background color to match the sidebar */
+  color: #fff; /* Set text color to white or any other contrasting color */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border from the toggle button */
+}
+
+.form-inline {
+  margin-right: 15px; /* Add spacing to the right of the search bar */
+}
+
+.btn-outline-light {
+  border-color: #fff; /* Set border color for the search button */
+  color: #fff; /* Set text color for the search button */
+}

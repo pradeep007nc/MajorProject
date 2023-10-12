@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #000; /* Set the background color to black to match the sidebar */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border from the toggle button */
+}
+
+.form-inline {
+  margin-right: 15px; /* Add spacing to the right of the search bar */
+}
+
+.btn-outline-primary {
+  border-color: #fff; /* Set border color for login and members buttons */
+  color: #fff; /* Set text color for login and members buttons */
+}

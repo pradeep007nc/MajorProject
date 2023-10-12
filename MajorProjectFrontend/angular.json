@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MajorProjectFrontend": {
+    "Angular-Ecommerce": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/major-project-frontend",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -26,9 +26,12 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/@okta/okta-signin-widget/dist/css/okta-sign-in.min.css"
             ],
-            "scripts": [ "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
@@ -61,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MajorProjectFrontend:build:production"
+              "browserTarget": "Angular-Ecommerce:build:production"
             },
             "development": {
-              "browserTarget": "MajorProjectFrontend:build:development"
+              "browserTarget": "Angular-Ecommerce:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MajorProjectFrontend:build"
+            "browserTarget": "Angular-Ecommerce:build"
           }
         },
         "test": {
@@ -88,27 +91,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+            "/node_modules/bootstrap/dist/js/bootstrap.min.js"
+          ]
           }
         }
       }
     }
   },
   "cli": {
-<<<<<<< HEAD
-    "analytics": "a5b6062c-aa44-4222-bd7f-24a11956bd5e"
-=======
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-    "analytics": "39ff0b83-4958-4d2f-9d2f-e4d296f83802"
-=======
-    "analytics": "a5b6062c-aa44-4222-bd7f-24a11956bd5e"
->>>>>>> refs/remotes/origin/main
-=======
-    "analytics": "39ff0b83-4958-4d2f-9d2f-e4d296f83802"
->>>>>>> Stashed changes
->>>>>>> 5a344d2 (main)
+    "analytics": "66475e47-bcd5-4b27-b60d-e60bdb3830bb"
   }
 }
