@@ -13,6 +13,7 @@ export class CheckoutService {
 
   constructor() {
     axios.defaults.baseURL = 'http://localhost:8080';
+    window.localStorage.removeItem("auth_token");
     axios.defaults.headers.post['Content-Type'] = 'application/json';
   }
 
@@ -20,7 +21,6 @@ export class CheckoutService {
     const token = localStorage.getItem('auth_token');
     return !!token;  // Returns true if the token is present, false otherwise
   }
-
 
   getAuthToken(): string | null {
     return window.localStorage.getItem("auth_token");

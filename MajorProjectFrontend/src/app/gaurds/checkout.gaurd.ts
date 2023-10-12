@@ -13,6 +13,7 @@ export class CheckoutGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): boolean | Observable<boolean> | Promise<boolean> {
+    console.log(this.authService.isAuthenticated());
     if (!this.authService.isAuthenticated()) {
       this.router.navigate(['/login']);
       return false;
