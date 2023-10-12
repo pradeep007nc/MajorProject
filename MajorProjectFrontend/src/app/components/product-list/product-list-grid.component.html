@@ -7,12 +7,12 @@
           <div class="card">
             <img src="{{product.imageUrl}}" class="card-img-top" alt="Product Image">
             <div class="card-body text-center">
-              <h5 class="card-title mb-2" style="font-size: 1rem;">{{product.name}}</h5>
-              <p class="card-text text-muted" style="font-size: 0.9rem;">{{product.unitPrice}}</p>
+              <h5 class="card-title mb-2" style="font-size: 1.2rem;">{{product.name}}</h5>
+              <p class="card-text text-muted" style="font-size: 1.3rem;">{{product.unitPrice | currency: 'INR'}}</p>
             </div>
             <hr class="my-0">
             <div class="card-footer bg-white border-0 text-center">
-              <button class="btn btn-outline-primary btn-sm" style="font-size: 0.8rem;" (click)="addToCart(product)">Add to Cart</button>
+              <button class="btn btn-outline-primary btn-sm" style="font-size: 0.9rem;" (click)="addToCart(product)">Add to Cart</button>
             </div>
           </div>
         </div>
