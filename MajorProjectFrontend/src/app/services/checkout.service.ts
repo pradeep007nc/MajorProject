@@ -18,7 +18,7 @@ export class CheckoutService {
   }
 
   isAuthenticated(): boolean {
-    const token = localStorage.getItem('auth_token');
+    const token = window.localStorage.getItem('auth_token');
     return !!token;  // Returns true if the token is present, false otherwise
   }
 

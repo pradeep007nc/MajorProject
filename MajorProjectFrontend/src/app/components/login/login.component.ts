@@ -1,5 +1,8 @@
+import { CartService } from './../../services/cart.service';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { CheckoutService } from 'src/app/services/checkout.service';
 
 @Component({
   selector: 'app-login',
@@ -7,6 +10,10 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+
+  constructor(private axiosService: CheckoutService,
+              private router: Router){}
+
   @Output() onSubmitLoginEvent = new EventEmitter();
   @Output() onSubmitRegisterEvent = new EventEmitter();
 
@@ -25,18 +32,38 @@ export class LoginComponent {
   }
 
   onSubmitLogin(): void {
-    this.onSubmitLoginEvent.emit({
-      login: this.login,
-      password: this.password,
-    });
+    this.axiosService.request(
+      "POST",
+      "/login",
+      {
+        login: this.login,
+        password: this.password
+      }
+    ).then(response => {
+      this.axiosService.setAuthToken(response.data.token);
+      this.router.navigate(['/products'])
+    }).catch(error => {
+            this.axiosService.setAuthToken(null);
+            window.alert("wrong password try again");
+    })
   }
 
   onSubmitRegister() {
-    this.onSubmitRegisterEvent.emit({
-      firstName: this.firstName,
-      lastName: this.lastName,
-      login: this.login,
-      password: this.password,
-    });
+    this.axiosService.request(
+      "POST",
+      "/register",
+      {
+        firstName: this.firstName,
+        lastName: this.lastName,
+        login: this.login,
+        password: this.password
+      }
+    ).then(response => {
+      this.axiosService.setAuthToken(response.data.token);
+      this.router.navigate(['/products'])
+    }).catch(error => {
+            this.axiosService.setAuthToken(null);
+            window.alert("wrong password try again");
+    })
   }
 }

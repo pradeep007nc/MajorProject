@@ -10,7 +10,8 @@ import { Routes, RouterModule, Router, CanActivate } from '@angular/router';
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 import { SearchComponent } from './components/search/search.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
-
+// Import statement in your component or module
+import { DatePipe } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartStatusComponent } from './components/cart-status/cart-status.component';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
@@ -21,6 +22,7 @@ import { MembersComponent } from './components/members/members.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CheckoutGuard } from './gaurds/checkout.gaurd';
 import { CommonModule } from '@angular/common';
+import { OrderHistoryComponent } from './components/order-history/order-history.component';
 
 //defining the routes
 const routes: Routes = [
@@ -41,6 +43,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     ProductListComponent,
+    LoginComponent,
+    OrderHistoryComponent,
     ProductCategoryMenuComponent,
     SearchComponent,
     ProductDetailsComponent,
@@ -59,6 +63,7 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
+    DatePipe
   ],
   providers: [ProductService, CheckoutGuard],
   bootstrap: [AppComponent]

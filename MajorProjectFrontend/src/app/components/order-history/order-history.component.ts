@@ -1,6 +1,8 @@
 import { OrderHistory } from 'src/app/common/order-history';
 import { OrderHistoryService } from './../../services/order-history.service';
 import { Component, OnInit } from '@angular/core';
+// Import statement in your component or module
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-order-history',
