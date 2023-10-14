@@ -9,28 +9,28 @@ import axios from 'axios';
 })
 export class CheckoutService {
 
-  private purchaseUrl = 'http://localhost:8080/api/checkout/purchase'
+  private purchaseUrl = 'http://localhost:8080/api/checkout/purchase';
+  private authTokenKey = 'auth_token';
 
   constructor() {
     axios.defaults.baseURL = 'http://localhost:8080';
-    window.localStorage.removeItem("auth_token");
     axios.defaults.headers.post['Content-Type'] = 'application/json';
   }
 
   isAuthenticated(): boolean {
-    const token = window.localStorage.getItem('auth_token');
-    return !!token;  // Returns true if the token is present, false otherwise
+    const token = this.getAuthToken();
+    return !!token;
   }
 
   getAuthToken(): string | null {
-    return window.localStorage.getItem("auth_token");
+    return window.sessionStorage.getItem(this.authTokenKey);
   }
 
   setAuthToken(token: string | null): void {
     if (token !== null) {
-      window.localStorage.setItem("auth_token", token);
+      window.sessionStorage.setItem(this.authTokenKey, token);
     } else {
-      window.localStorage.removeItem("auth_token");
+      window.sessionStorage.removeItem(this.authTokenKey);
     }
   }
 
