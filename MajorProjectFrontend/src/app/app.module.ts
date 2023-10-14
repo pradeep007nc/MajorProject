@@ -56,9 +56,9 @@ const routes: Routes = [
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    FormsModule
   ],
   providers: [ProductService, CheckoutGuard],
   bootstrap: [AppComponent]
