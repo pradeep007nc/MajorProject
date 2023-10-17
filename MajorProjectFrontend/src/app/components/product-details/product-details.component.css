@@ -1,0 +1,27 @@
+.full-page {
+  height: 100vh;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table td {
+  vertical-align: top;
+}
+
+.smaller-img {
+  width: 100%;
+  height: auto; /* Allow the image to adjust its height while maintaining aspect ratio */
+}
+
+.product-details {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: -30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add any additional styles as needed */

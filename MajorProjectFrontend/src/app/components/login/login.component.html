@@ -19,16 +19,27 @@
           <form (ngSubmit)="onSubmitLogin()" #loginForm="ngForm">
             <div class="mb-4">
               <label for="loginName" class="form-label">Username</label>
-              <input type="text" id="loginName" name="login" class="form-control" [(ngModel)]="login">
+              <input type="text" id="loginName" name="login" class="form-control" [(ngModel)]="login" minlength="5" required>
+              <div *ngIf="loginForm.controls['login'].touched && loginForm.controls['login'].dirty && !loginForm.controls['login'].valid"
+                class="alert alert-danger">
+                Username is required and should be at least 5 characters.
+              </div>
             </div>
 
             <div class="mb-4">
-              <label for="loginpassword" class="form-label">Password</label>
-              <input type="password" id="loginpassword" name="password" class="form-control" [(ngModel)]="password">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" id="loginPassword" name="password" class="form-control" [(ngModel)]="password"
+                pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(.{8,})" required>
+              <div *ngIf="loginForm.controls['password'].touched && loginForm.controls['password'].dirty && loginForm.controls['password'].hasError('pattern')"
+                class="alert alert-danger">
+                Password must contain at least one uppercase letter, one special character, and be at least 8 characters long.
+              </div>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-block mb-4">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block mb-4" [disabled]="loginForm.invalid">Sign In</button>
           </form>
+
+
         </div>
 
         <div [ngClass]="active == 'register' ? 'tab-pane fade show active' : 'tab-pane fade'">

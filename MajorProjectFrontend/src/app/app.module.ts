@@ -48,6 +48,8 @@ const routes: Routes = [
     ProductCategoryMenuComponent,
     SearchComponent,
     ProductDetailsComponent,
+    CheckoutComponent,
+    OrderHistoryComponent,
     CartStatusComponent,
     CartDetailsComponent,
     CheckoutComponent,

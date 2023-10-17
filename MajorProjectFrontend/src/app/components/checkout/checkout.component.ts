@@ -176,10 +176,11 @@ export class CheckoutComponent implements OnInit{
     purchase.order = order;
     purchase.orderItems = orderItems;
 
+
     //call rest api via checkout service
     this.checkoutService.request(
           "POST",
-          "/place-order",  // Replace with the actual URL for placing an order
+          "/api/checkout/purchase",  // Replace with the actual URL for placing an order
           purchase
         ).then(response => {
           alert(`Your order has been received \nOrder Tracking Number: ${response.data.orderTrackingNumber}`);
