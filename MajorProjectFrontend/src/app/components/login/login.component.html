@@ -39,6 +39,26 @@
             <button type="submit" class="btn btn-primary btn-block mb-4" [disabled]="loginForm.invalid">Sign In</button>
           </form>
 
+          <div *ngIf="loginFailed">
+            <div class="modal" tabindex="-1" role="dialog" [ngClass]="{ 'd-block': showModal }">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Login or Password Incorrect!</h5>
+                    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>invalid Credentials !!!</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
 
@@ -66,6 +86,7 @@
 
             <button type="submit" class="btn btn-primary btn-block mb-4">Register</button>
           </form>
+
         </div>
 
       </div>

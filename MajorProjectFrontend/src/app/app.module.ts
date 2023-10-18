@@ -12,7 +12,7 @@ import { SearchComponent } from './components/search/search.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 // Import statement in your component or module
 import { DatePipe } from '@angular/common';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbPagination } from '@ng-bootstrap/ng-bootstrap';
 import { CartStatusComponent } from './components/cart-status/cart-status.component';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
@@ -61,6 +61,7 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgbPagination,
     NgbModule,
     FormsModule,
     ReactiveFormsModule,

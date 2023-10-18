@@ -1,7 +1,8 @@
 import { CartService } from './../../services/cart.service';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { CheckoutService } from 'src/app/services/checkout.service';
 
 @Component({
@@ -12,7 +13,8 @@ import { CheckoutService } from 'src/app/services/checkout.service';
 export class LoginComponent {
 
   constructor(private axiosService: CheckoutService,
-              private router: Router){}
+              private router: Router,
+              public modalService: NgbModal){}
 
   @Output() onSubmitLoginEvent = new EventEmitter();
   @Output() onSubmitRegisterEvent = new EventEmitter();
@@ -22,6 +24,8 @@ export class LoginComponent {
   lastName: string = '';
   login: string = '';
   password: string = '';
+  loginFailed: boolean = false;
+  modalRef: NgbModalRef | null = null;
 
   onTabLogin() {
     this.active = 'login';
@@ -44,8 +48,11 @@ export class LoginComponent {
       this.router.navigate(['/products'])
     }).catch(error => {
             this.axiosService.setAuthToken(null);
-            window.alert("wrong password try again");
-    })
+            this.login = '';
+            this.password = '';
+            this.loginFailed = true;
+            this.openModal();
+    });
   }
 
   onSubmitRegister() {
@@ -63,7 +70,18 @@ export class LoginComponent {
       this.router.navigate(['/products'])
     }).catch(error => {
             this.axiosService.setAuthToken(null);
-            window.alert("wrong password try again");
     })
   }
+
+  showModal: boolean = false;
+
+  openModal() {
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
+  }
+
+
 }
