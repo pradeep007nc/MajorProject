@@ -21,13 +21,28 @@ export class CartService {
   storage: Storage = localStorage;
 
   constructor() {
-    let data = JSON.parse(this.storage.getItem('cartItems')!);
+    let storedData = this.storage.getItem('cartItems');
+    console.log('Stored data from storage:', storedData);
 
-    if(data != null){
-      this.cartItems = data;
+    if (storedData) {
+      try {
+        let data = JSON.parse(storedData);
 
-      //compute total based on data in storage
-      this.computeCartTotal();
+        if (data != null) {
+          this.cartItems = data;
+
+          // compute total based on data in storage
+          this.computeCartTotal();
+        }
+      } catch (error) {
+        console.error('Error parsing JSON from storage:', error);
+        // Handle the error, e.g., set default values or clear the storage.
+      }
+    } else {
+      this.cartItems = [];
+      this.totalPrice.next(0);
+      this.totalQuantity.next(0);
+      this.persistCartItems();
     }
    }
 

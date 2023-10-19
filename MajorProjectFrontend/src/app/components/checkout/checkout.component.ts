@@ -1,4 +1,3 @@
-import { CartItem } from 'src/app/common/cart-item';
 import { CheckoutService } from './../../services/checkout.service';
 import { Country } from './../../common/country';
 import { ShopFormService } from './../../services/shop-form.service';
