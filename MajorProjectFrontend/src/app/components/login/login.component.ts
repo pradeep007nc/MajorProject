@@ -1,8 +1,6 @@
-import { CartService } from './../../services/cart.service';
 import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { CheckoutService } from 'src/app/services/checkout.service';
 
 @Component({
@@ -19,13 +17,15 @@ export class LoginComponent {
   @Output() onSubmitLoginEvent = new EventEmitter();
   @Output() onSubmitRegisterEvent = new EventEmitter();
 
+  storage: Storage = sessionStorage;
   active: string = 'login';
   firstName: string = '';
   lastName: string = '';
   login: string = '';
   password: string = '';
   loginFailed: boolean = false;
-  modalRef: NgbModalRef | null = null;
+  // modalRef: NgbModalRef | null = null;
+  modalMessage: string = '';
 
   onTabLogin() {
     this.active = 'login';
@@ -46,11 +46,13 @@ export class LoginComponent {
     ).then(response => {
       this.axiosService.setAuthToken(response.data.token);
       this.router.navigate(['/products'])
+      this.storage.setItem('userEmail', JSON.stringify(this.login));
     }).catch(error => {
             this.axiosService.setAuthToken(null);
             this.login = '';
             this.password = '';
             this.loginFailed = true;
+            this.modalMessage =  error.response.data.message;;
             this.openModal();
     });
   }
@@ -67,7 +69,8 @@ export class LoginComponent {
       }
     ).then(response => {
       this.axiosService.setAuthToken(response.data.token);
-      this.router.navigate(['/products'])
+      this.router.navigate(['/products']);
+      this.storage.setItem('userEmail', JSON.stringify(this.login));
     }).catch(error => {
             this.axiosService.setAuthToken(null);
     })
@@ -82,6 +85,7 @@ export class LoginComponent {
   closeModal() {
     this.showModal = false;
   }
+
 
 
 }

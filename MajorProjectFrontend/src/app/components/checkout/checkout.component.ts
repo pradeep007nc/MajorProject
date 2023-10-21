@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 import { Order } from 'src/app/common/order';
 import { OrderItem } from 'src/app/common/order-item';
 import { Purchase } from 'src/app/common/purchase';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-checkout',
@@ -36,7 +37,8 @@ export class CheckoutComponent implements OnInit{
     private shopFormService: ShopFormService,
     private cartService: CartService,
     private checkoutService: CheckoutService,
-    private router: Router
+    private router: Router,
+    public modalService: NgbModal
   ) {
     // Checking authentication status synchronously
     const isAuthenticated = this.checkoutService.isAuthenticated();
@@ -131,6 +133,7 @@ export class CheckoutComponent implements OnInit{
 
   onSubmit(){
 
+
     if(this.checkOutFormGroup.invalid){
       this.checkOutFormGroup.markAllAsTouched();
       return;
@@ -178,15 +181,20 @@ export class CheckoutComponent implements OnInit{
 
     //call rest api via checkout service
     this.checkoutService.request(
-          "POST",
-          "/api/checkout/purchase",  // Replace with the actual URL for placing an order
-          purchase
-        ).then(response => {
-          alert(`Your order has been received \nOrder Tracking Number: ${response.data.orderTrackingNumber}`);
-          this.resetCart();
-        }).catch(error => {
-          alert(`There was an error ${error.message}`);
-        });
+      "POST",
+      "/api/checkout/purchase",
+      purchase
+    ).then(response => {
+      console.log("Response received:", response);
+      this.modalMessage = `Your order has been received \nOrder Tracking Number: ${response.data.orderTrackingNumber}`;
+      this.openModal();
+      console.log(this.showModal);
+      this.resetCart(); // Add a console log here
+    }).catch(error => {
+      console.log("Error occurred:", error);
+      this.modalMessage = `There was an error ${error.message}`;
+      this.openModal();
+    });
   }
 
   resetCart() {
@@ -194,6 +202,7 @@ export class CheckoutComponent implements OnInit{
     this.cartService.cartItems = [];
     this.cartService.totalPrice.next(0);
     this.cartService.totalQuantity.next(0);
+    this.cartService.storage.setItem('cartItems', JSON.stringify(this.cartService.cartItems));
 
     //reset form
     this.checkOutFormGroup.reset();
@@ -280,4 +289,17 @@ export class CheckoutComponent implements OnInit{
   get name(){ return this.checkOutFormGroup.get('Payment.name'); }
   get cardNumber(){ return this.checkOutFormGroup.get('Payment.cardNumber'); }
   get securityCode(){ return this.checkOutFormGroup.get('Payment.securityCode'); }
+
+
+  modalMessage: string = '';
+  showModal: boolean = false;
+
+  openModal() {
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
+  }
+
 }

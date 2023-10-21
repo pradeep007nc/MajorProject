@@ -18,32 +18,18 @@ export class CartService {
 
   //reference to the web browser session storge object
   // storage: Storage = sessionStorage;
-  storage: Storage = localStorage;
+  public storage: Storage = localStorage;
 
   constructor() {
-    let storedData = this.storage.getItem('cartItems');
-    console.log('Stored data from storage:', storedData);
+         // read data from storage
+         let data = this.storage.getItem('cartItems');
 
-    if (storedData) {
-      try {
-        let data = JSON.parse(storedData);
+         if (data != null) {
+           this.cartItems = JSON.parse(data);
 
-        if (data != null) {
-          this.cartItems = data;
-
-          // compute total based on data in storage
-          this.computeCartTotal();
-        }
-      } catch (error) {
-        console.error('Error parsing JSON from storage:', error);
-        // Handle the error, e.g., set default values or clear the storage.
-      }
-    } else {
-      this.cartItems = [];
-      this.totalPrice.next(0);
-      this.totalQuantity.next(0);
-      this.persistCartItems();
-    }
+           // compute totals based on the data that is read from storage
+           this.computeCartTotal();
+         }
    }
 
   addToCart(theCartItem: CartItem) {
