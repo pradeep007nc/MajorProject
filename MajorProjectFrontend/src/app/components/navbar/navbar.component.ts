@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Observable, Subscription } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { CheckoutService } from 'src/app/services/checkout.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+
+
+  constructor() {}
+
+
 
 }

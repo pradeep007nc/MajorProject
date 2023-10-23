@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
+import { NgClass } from '@angular/common';
+import { Component, ElementRef, EventEmitter, Output, Renderer2, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { CheckoutService } from 'src/app/services/checkout.service';
@@ -12,28 +13,33 @@ export class LoginComponent {
 
   constructor(private axiosService: CheckoutService,
               private router: Router,
-              public modalService: NgbModal){}
+              public modalService: NgbModal){
+              }
 
   @Output() onSubmitLoginEvent = new EventEmitter();
   @Output() onSubmitRegisterEvent = new EventEmitter();
 
   storage: Storage = sessionStorage;
-  active: string = 'login';
   firstName: string = '';
   lastName: string = '';
   login: string = '';
   password: string = '';
+  active: string = '';
   loginFailed: boolean = false;
   // modalRef: NgbModalRef | null = null;
   modalMessage: string = '';
 
   onTabLogin() {
     this.active = 'login';
+    this.container = 'container';
   }
 
   onTabRegister() {
     this.active = 'register';
+    this.container = 'container right-panel-active'
   }
+
+  container = 'container';
 
   onSubmitLogin(): void {
     this.axiosService.request(
@@ -72,7 +78,7 @@ export class LoginComponent {
       this.router.navigate(['/products']);
       this.storage.setItem('userEmail', JSON.stringify(this.login));
     }).catch(error => {
-            this.axiosService.setAuthToken(null);
+        this.axiosService.setAuthToken(null);
     })
   }
 
