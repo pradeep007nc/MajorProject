@@ -9,11 +9,11 @@ import axios from 'axios';
 })
 export class CheckoutService {
 
-  private purchaseUrl = 'http://localhost:8080/api/checkout/purchase';
+  private purchaseUrl = "https://localhost:8443/api" + '/checkout/purchase';
   private authTokenKey = 'auth_token';
 
   constructor() {
-    axios.defaults.baseURL = 'http://localhost:8080';
+    axios.defaults.baseURL = 'https://localhost:8443';
     axios.defaults.headers.post['Content-Type'] = 'application/json';
   }
 

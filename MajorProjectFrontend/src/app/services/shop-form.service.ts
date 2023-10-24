@@ -5,13 +5,15 @@ import { Country } from '../common/country';
 import {map} from 'rxjs/operators'
 import { State } from '../common/state';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class ShopFormService {
 
-  private countriesUrl = "http://localhost:8080/api/countries";
-  private stateUrl = "http://localhost:8080/api/states";
+  theEndpoint = "https://localhost:8443/api";
+  private countriesUrl = this.theEndpoint+"/countries";
+  private stateUrl = this.theEndpoint+"/states";
 
   constructor(private httpClient: HttpClient) { }
 

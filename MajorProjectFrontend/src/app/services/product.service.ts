@@ -11,8 +11,9 @@ import { ProductCategory } from '../common/product-category';
 })
 export class ProductService {
 
-  private baseUrl = 'http://localhost:8080/api/products';
-  private categoryUrl = 'http://localhost:8080/api/product-category';
+  theEndpoint = "https://localhost:8443"
+  private baseUrl = this.theEndpoint+'/api/products';
+  private categoryUrl = this.theEndpoint+'/api/product-category';
 
   constructor(private httpClient: HttpClient) {
   }
