@@ -1,5 +1,6 @@
 package com.pradeep.MajorProjectBackend.config.SecurityConfig;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,12 +17,15 @@ import java.util.Arrays;
 @EnableWebMvc
 public class WebConfig {
 
+    @Value("${allowed.origins}")
+    private String allowedOrigin;
+
     @Bean
     public FilterRegistrationBean corsFilter(){
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         corsConfiguration.setAllowCredentials(true);
-        corsConfiguration.addAllowedOrigin("http://localhost:4200");
+        corsConfiguration.addAllowedOrigin(allowedOrigin);
         corsConfiguration.setAllowedHeaders(
                 Arrays.asList(
                         HttpHeaders.AUTHORIZATION,
