@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54d032c6-fa49-4d25-a19f-c31b24589559" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/SmartCommerce-keystore.p12" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/config/SecurityConfig/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/config/SecurityConfig/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/controller/SecurityController/MessagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/controller/SecurityController/MessagesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/MajorProjectBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/MajorProjectBackendApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/package.json" afterDir="false" />
     </list>
