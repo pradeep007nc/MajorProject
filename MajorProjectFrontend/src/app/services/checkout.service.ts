@@ -1,19 +1,22 @@
+import { PaymentInfo } from './../common/payment-info';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Purchase } from '../common/purchase';
 import { Observable, of } from 'rxjs';
 import axios from 'axios';
+import { environment } from 'src/environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CheckoutService {
 
-  private purchaseUrl = "https://localhost:8443/api" + '/checkout/purchase';
+  private purchaseUrl = environment.serverUrl + '/checkout/purchase';
   private authTokenKey = 'auth_token';
+  private paymentIntentUrl = environment.serverUrl + "/checkout/payment-intent";
 
-  constructor() {
-    axios.defaults.baseURL = 'https://localhost:8443';
+  constructor(private httpClient: HttpClient) {
+    axios.defaults.baseURL = environment.baseUrl;
     axios.defaults.headers.post['Content-Type'] = 'application/json';
   }
 
@@ -48,6 +51,11 @@ export class CheckoutService {
           data: data,
           headers: headers
       });
+  }
+
+  //payment intent for stripe
+  createPaymentIntent(paymentInfo: PaymentInfo) : Observable<any>{
+    return this.httpClient.post<PaymentInfo>(this.paymentIntentUrl, paymentInfo);
   }
 
 }

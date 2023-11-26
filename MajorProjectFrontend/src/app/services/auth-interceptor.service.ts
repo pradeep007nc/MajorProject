@@ -2,6 +2,7 @@ import { CheckoutService } from 'src/app/services/checkout.service';
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, from, lastValueFrom } from 'rxjs';
+import { environment } from 'src/environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class AuthInterceptorService implements HttpInterceptor{
 
 
   private async handleAccess(request: HttpRequest<any>, next: HttpHandler): Promise<HttpEvent<any>> {
-    const theEndpoint = "https://localhost:8443/api" + '/orders'
+    const theEndpoint = environment.serverUrl + '/orders'
     const securedEndpoints = [theEndpoint];
 
     //if it match get access token

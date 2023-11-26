@@ -4,6 +4,7 @@ import { Observable, of } from 'rxjs';
 import { Country } from '../common/country';
 import {map} from 'rxjs/operators'
 import { State } from '../common/state';
+import { environment } from 'src/environments/environment.development';
 
 
 @Injectable({
@@ -11,7 +12,7 @@ import { State } from '../common/state';
 })
 export class ShopFormService {
 
-  theEndpoint = "https://localhost:8443/api";
+  theEndpoint = environment.serverUrl;
   private countriesUrl = this.theEndpoint+"/countries";
   private stateUrl = this.theEndpoint+"/states";
 
