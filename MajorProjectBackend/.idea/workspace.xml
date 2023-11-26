@@ -5,169 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54d032c6-fa49-4d25-a19f-c31b24589559" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/docs/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/adobe_logo.c4bef91cde0b2ef9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/ajax-loader-processing-16.9b7e9844c08d9e7d.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/ajax-loader-processing-24.d3f361f5df4c2bf7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/amazon_logo.337c4d20a4003936.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/app_70x70.61910621d090cb5e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/app_76x76.43beeb89e22c9687.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/apple-app-store.a2e763b82653be76.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/apple_logo.0d1e2dcbc494544e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/checkbox-01.dcdde52df4e7b021.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/checkbox-01@2x.a14b77b2826ccdc2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/checkbox-sign-in-widget.fed340838aa12fa8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/checkbox-sign-in-widget@2x.0d76a86a0a3197ed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/checkmark.d095650c88a7be22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/chosen-sprite.e7ced34e64a5eb24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/chosen-sprite@2x.2019bbf3ab089c1f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/customFactor@2x.7faa45cf55fdf5b4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/customFactor_38x38.13547870c30a58ae.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/customFactor_70x70.7ffb18f3e06c3f26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/customFactor_ico@2x.a931a5bac8d73f7a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/default.6bbfd4b09bd4c2ea.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/default@2x.51275a24451aa2fe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/default_logo.5bc3f217d41752f6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/desktop_70x70.20d3fb1797bdb363.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/desktop_76x76.97606b37204172a1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/discord_logo.04825bf754dfc657.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/drop-menu-s-white.b0630eb65b8aba2c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/drop-menu-s.f593b98761e71fda.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/duo@2x.138e30716e3465e9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/duo_38x38.ae6ae93e92e371f2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/duo_70x70.88f1380ac0a0c7cf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/duo_ico@2x.495a69c2936fc6f9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/email@2x.7bd2a7a9131665e0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/email_38x38.8835c65303882158.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/email_70x70.4a6dad9390386539.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/email_ico@2x.a034de5d0c8d7dec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/error-01.0279be8b54ef6b6f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-brands-400.5f7c5bb77eae788b.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-brands-400.9210030c21e68a90.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-regular-400.02ad4ff91ef84f65.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-regular-400.570a165b064c1468.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-solid-900.0b5caff7ad4bc179.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-solid-900.3eae9857c06e9372.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-v4compatibility.6209cf0172d95b0e.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-v4compatibility.92dce52f885fd838.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/facebook_logo.3f6749d3a4f0b50f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/github_logo.811295047f127266.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/gitlab_logo.828d5fc06e81d92e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/google-play-store.548639449f5a4be1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/googleAuth@2x.42a5c0f45aa6f183.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/googleAuth_38x38.2f2e26671f68db8f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/googleAuth_70x70.1c648ca754399f81.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/googleAuth_ico@2x.2ded07c007567091.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/google_logo.ddb4cc975d67c6c7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/hotpFactor@2x.f83b9e42909db9eb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/hotpFactor_38x38.94550ed2500b8089.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/hotpFactor_70x70.305b00b94d78f792.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/hotpFactor_ico@2x.dee8779cf3770b57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/line_logo.695b79f83b646930.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/linkedin_logo.c76fca4c0a378430.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/loader@1x.694f911ec2217375.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/location_70x70.79551cb950cb050d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/location_76x76.9b04238d81771e76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/main.8661365fb52a0cac.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/microsoft_logo.354e7139ba118550.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/montserrat-light-webfont.4bb7d8d1ba94e07f.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/montserrat-light-webfont.92d73e5b9c223f5e.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/montserrat-light-webfont.cb20cbd9535249b3.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/montserrat-light-webfont.e50ca42f1ccca85e.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/montserrat-regular-webfont.083d066507065916.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/montserrat-regular-webfont.2151506ce8fca81b.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/montserrat-regular-webfont.691ec7ceecc596eb.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/montserrat-regular-webfont.9825e2907b01943a.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/okta-buttons-sprite-001.acccb0bfd534a4a1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/oktaVerify@2x.8c5297a6f578084a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/oktaVerify_38x38.ffc9eb8b4831b007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/oktaVerify_70x70.8c5297a6f578084a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/oktaVerify_authenticator.2fb5911e368b14c8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/oktaVerify_authenticator@2x.e0bd3163bd2382b8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/oktaVerify_ico@1x.a9d387d9a9aebb60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/oktaVerify_ico@2x.6cb29b98a99b9cd4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/okticon.62142a48b24f9593.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/okticon.ea9690c77161d429.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/okticon.f87fe89b94caa96a.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/okticon.fa0ee3d473383e2d.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/onprem@2x.86c547f44813eaae.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/onprem_38x38.8c3c2f90495f45e5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/onprem_70x70.98cc8d10b98d183b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/onprem_ico@2x.4eeccf3eed367dd0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/orcid_logo.00b88576fb1b6915.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/password@2x.fdc19614e7724cee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/password_38x38.f350b7d2ebe95cb1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/password_70x70.45d3ee9736dc1a87.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/password_ico@2x.e4d5d9a3828932c9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/paypal_logo.9bbf92f890c12c4d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/paypal_sandbox_logo.9bbf92f890c12c4d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/phone@2x.ce82b8f2a11e6f24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/phone_70x70.2f93946edd11f54a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/polyfills.dfdff3c1431df210.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/question@2x.185caeccf2dfdc6c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/question_38x38.efd66957d00562d7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/question_70x70.0ef14ed45eceea09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/question_ico@2x.2cc50771797fc23e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/quickbooks_logo.09756d7d4177971a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/radiobutton-01.3f5f9c6d7b8cc3ef.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/radiobutton-01@2x.e1727ba76b2f91ac.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/rsa@2x.199afe443e0f6fdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/rsa_38x38.67d488b3957a0d13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/rsa_70x70.8e7bc88270e3f07e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/rsa_ico@2x.e2d14444c3fd004b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/runtime.7af1a42e8deb813d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/salesforce_logo.586559bb1b7bbdaa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/scanerror.331606209a0fafdc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/sign-on-widget-spinner.ba3af1ed4d79fbd3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/smartcard@2x.8d7c31aac339a7e9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/smartcard_70x70.7979a4f0019a4c7d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/sms@2x.2ef80418ad5e423a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/sms_38x38.cf4df6882eb201e6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/sms_70x70.b8b31dc87142e1db.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/sms_ico@2x.a6c45dd4127fc4c4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/spotify_logo.bf85b27f63f26a5b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/styles.eab67f68efe9c2be.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/symantec@2x.2b2d64922d2d58b9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/symantec_38x38.9b6ab2fad820765a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/symantec_70x70.8026f9d9f9adc640.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/symantec_ico@2x.8a7c73e6ac319bf9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/tooltip_close.07f7ceff515e44fa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/u2f@2x.0fa23bdb7c1227d0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/u2f_38x38.8dfe21da22fa3927.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/u2f_70x70.a6b8818dab3c932a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/u2f_bluetooth.593c0e863c68505f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/u2f_ico@2x.fbc8d130ae3fb840.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/u2f_usb.704dfbbe8fd348bb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/unknown-device.d17b35e3206204bc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/unknown-device@2x.c5ac852c4ce99dba.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/user-icon.1f3714c446aadb91.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/voicecall@2x.6345a7d7a214a233.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/voicecall_38x38.9c83798f7ae305ec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/voicecall_70x70.84c1b8b6188da9e6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/voicecall_ico@2x.61e58cb463e6b3e1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/webauthn@2x.cf82d5bfcfcd0e28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/webauthn_38x38.2c75bedaf24d0128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/webauthn_70x70.f653b485401154bf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/webauthn_ico@2x.6d4a064884b0e45c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/windowsHello@2x.236d4748f33959b5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/windowsHello_38x38.ecf79971dc3bac6d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/windowsHello_70x70.8a682ab1fda4174f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/windowsHello_ico@2x.5d242b33d00ec7b5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/xero_logo.09d82e9a17d4f29c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/yahoo_logo.69430507db1d07c7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/yahoojp_logo.38045a6bd1af3516.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/yubico@2x.09dc3fe6c6a7c850.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/yubico_38x38.7974e2c4f47d7c29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/yubico_70x70.779dde71357c693d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/yubico_ico@2x.be5e7e97c35d2a61.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/yubikeyDemo.fb977aac6934f921.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/auth-interceptor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/auth-interceptor.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/checkout.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/checkout.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/order-history.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/order-history.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/product.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/shop-form.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/shop-form.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dto/PaymentInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/MajorProjectBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/MajorProjectBackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/service/CheckoutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/service/CheckoutService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/service/CheckoutServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/service/CheckoutServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/MajorProjectBackendApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/MajorProjectBackendApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/pradeep/MajorProjectBackend/Mappers/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/pradeep/MajorProjectBackend/Mappers/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,17 +54,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/pilli007/Documents/Pes-sem3&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/home/pilli007/Documents/Pes-sem3",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.pradeep.MajorProjectBackend.dto" />
