@@ -6,7 +6,6 @@ import {
   FormBuilder,
   FormControl,
   FormGroup,
-  FormGroupName,
   Validators,
 } from '@angular/forms';
 import { State } from 'src/app/common/state';
@@ -19,7 +18,6 @@ import { Purchase } from 'src/app/common/purchase';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { environment } from 'src/environments/environment.development';
 import { PaymentInfo } from 'src/app/common/payment-info';
-
 
 @Component({
   selector: 'app-checkout',
@@ -66,7 +64,6 @@ export class CheckoutComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
     //setup stripe form
     this.setupStripeForm();
 
@@ -143,35 +140,39 @@ export class CheckoutComponent implements OnInit {
       //   expirationYear: [''],
       // }),
 
-
+      creditCard: this.formBuilder.group({
+        /*
+        cardType: new FormControl('', [Validators.required]),
+        nameOnCard:  new FormControl('', [Validators.required, Validators.minLength(2),
+                                          Luv2ShopValidators.notOnlyWhitespace]),
+        cardNumber: new FormControl('', [Validators.required, Validators.pattern('[0-9]{16}')]),
+        securityCode: new FormControl('', [Validators.required, Validators.pattern('[0-9]{3}')]),
+        expirationMonth: [''],
+        expirationYear: ['']
+        */
+      }),
     });
 
     //populate countries
     this.shopFormService.getCountries().subscribe((data) => {
       this.countries = data;
     });
-
   }
 
   setupStripeForm() {
-    //get a handle to stripe element
     var elements = this.stripe.elements();
+    this.cardElement = elements.create('card', { hidePostalCode: true });
+    this.cardElement.mount('#card-element');
 
-    //create a card element
-    this.cardElement = elements.create('card', {hidePostalCode: true});
-
-    //add an instance of ui component into the card element div
-    this.cardElement.mount("#card-element")
-
-    //add event binding for change
-    //validation event
+    // Add event binding for the 'change' event on the card element
     this.cardElement.on('change', (event: any) => {
-      //get a handle card element
+      // get a handle to card-errors element
       this.displayError = document.getElementById('card-errors');
 
-      if(event.complete){
+      if (event.complete) {
         this.displayError.textContent = '';
-      }else if(event.error){
+      } else if (event.error) {
+        // show validation error to customer
         this.displayError.textContent = event.error.message;
       }
     });
@@ -243,18 +244,62 @@ export class CheckoutComponent implements OnInit {
     purchase.order = order;
     purchase.orderItems = orderItems;
 
-    this.checkoutService
-      .request('POST', '/api/checkout/purchase', purchase)
-      .then((response) => {
-        console.log('Response received:', response);
-        this.modalMessage = `Your order has been received \nOrder Tracking Number: ${response.data.orderTrackingNumber}`;
-        this.resetCart();
-      })
-      .catch((error) => {
-        console.log('Error occurred:', error);
-        this.modalMessage = `There was an error ${error.message}`;
-        this.openModal();
-      });
+    // this.checkoutService
+    //   .request('POST', '/api/checkout/purchase', purchase)
+    //   .then((response) => {
+    //     console.log('Response received:', response);
+    //     this.modalMessage = `Your order has been received \nOrder Tracking Number: ${response.data.orderTrackingNumber}`;
+    //     this.resetCart();
+    //   })
+    //   .catch((error) => {
+    //     console.log('Error occurred:', error);
+    //     this.modalMessage = `There was an error ${error.message}`;
+    //     this.openModal();
+    //   });
+    // Assuming totalPrice is a decimal value
+    this.paymentInfo.amount = Math.round(this.totalPrice * 100); // Convert to paise and round to the nearest integer
+    this.paymentInfo.currency = 'INR';
+
+    console.log(this.paymentInfo);
+    if (!this.checkOutFormGroup.invalid && this.displayError.textContent === "") {
+
+      this.checkoutService.createPaymentIntent(this.paymentInfo).subscribe(
+        (paymentIntentResponse) => {
+          this.stripe.confirmCardPayment(paymentIntentResponse.client_secret,
+            {
+              payment_method: {
+                card: this.cardElement
+              }
+            }, { handleActions: false })
+          .then((result: any) => {
+            if (result.error) {
+              // inform the customer there was an error
+              alert(`There was an error: ${result.error.message}`);
+            } else {
+              // call REST API via the CheckoutService
+              this.checkoutService.request('POST', '/api/checkout/purchase', purchase).then(
+                (response: any) => { // <-- Use parentheses here instead of curly braces
+                  console.log(response.data);
+                  this.modalMessage =  `Your order has been received.\nOrder tracking number: ${response.data.orderTrackingNumber}`;
+                  this.openModal();
+                  // reset cart
+                  this.resetCart();
+                },
+                (err: any) => { // <-- Use parentheses here instead of curly braces
+                  this.modalMessage = `There was an error: ${err.message}`;
+                  this.openModal();
+                }
+              );
+
+            }
+          });
+        }
+      );
+    } else {
+      this.checkOutFormGroup.markAllAsTouched();
+      return;
+    }
+
   }
 
   resetCart() {
@@ -371,18 +416,18 @@ export class CheckoutComponent implements OnInit {
     return this.checkOutFormGroup.get('billingAddress.zipCode');
   }
 
-  get cardType() {
-    return this.checkOutFormGroup.get('Payment.cardType');
-  }
-  get name() {
-    return this.checkOutFormGroup.get('Payment.name');
-  }
-  get cardNumber() {
-    return this.checkOutFormGroup.get('Payment.cardNumber');
-  }
-  get securityCode() {
-    return this.checkOutFormGroup.get('Payment.securityCode');
-  }
+  // get cardType() {
+  //   return this.checkOutFormGroup.get('Payment.cardType');
+  // }
+  // get name() {
+  //   return this.checkOutFormGroup.get('Payment.name');
+  // }
+  // get cardNumber() {
+  //   return this.checkOutFormGroup.get('Payment.cardNumber');
+  // }
+  // get securityCode() {
+  //   return this.checkOutFormGroup.get('Payment.securityCode');
+  // }
 
   modalMessage: string = '';
   showModal: boolean = false;
@@ -396,5 +441,3 @@ export class CheckoutComponent implements OnInit {
     this.router.navigate(['/products']);
   }
 }
-
-

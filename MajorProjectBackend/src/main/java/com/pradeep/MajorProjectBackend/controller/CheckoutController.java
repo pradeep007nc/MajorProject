@@ -31,6 +31,14 @@ public class CheckoutController {
 
     @PostMapping("/payment-intent")
     public ResponseEntity<String> createPaymentIntent(@RequestBody PaymentInfo paymentInfo) throws StripeException {
+        System.out.println(paymentInfo.getCurrency() + " " + paymentInfo.getAmount());
+
+        // Check if amount is greater than or equal to 1
+        if (paymentInfo.getAmount() < 1) {
+            // Handle the error or log a message
+            return new ResponseEntity<>("Invalid amount", HttpStatus.BAD_REQUEST);
+        }
+
         PaymentIntent paymentIntent = checkoutService.createPaymentIntent(paymentInfo);
         String paymentString = paymentIntent.toJson();
         return new ResponseEntity<>(paymentString, HttpStatus.OK);
