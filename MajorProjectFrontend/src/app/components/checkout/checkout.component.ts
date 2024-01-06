@@ -63,11 +63,13 @@ export class CheckoutComponent implements OnInit {
     }
   }
 
+  public theEmail!: string;
+
   ngOnInit(): void {
     //setup stripe form
     this.setupStripeForm();
 
-    const theEmail = JSON.parse(this.cache.getItem('userEmail')!);
+     this.theEmail = JSON.parse(this.cache.getItem('userEmail')!);
 
     this.reviewCartDetails();
 
@@ -82,7 +84,7 @@ export class CheckoutComponent implements OnInit {
           Validators.required,
           CustomValidators.notOnlyWhiteSpace,
         ]),
-        email: new FormControl(theEmail, [
+        email: new FormControl(this.theEmail, [
           Validators.required,
           Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),
         ]),
@@ -259,7 +261,7 @@ export class CheckoutComponent implements OnInit {
     // Assuming totalPrice is a decimal value
     this.paymentInfo.amount = Math.round(this.totalPrice * 100); // Convert to paise and round to the nearest integer
     this.paymentInfo.currency = 'INR';
-
+    purchase.customer.email = this.theEmail;
     console.log(this.paymentInfo);
     if (!this.checkOutFormGroup.invalid && this.displayError.textContent === "") {
 
@@ -278,14 +280,14 @@ export class CheckoutComponent implements OnInit {
             } else {
               // call REST API via the CheckoutService
               this.checkoutService.request('POST', '/api/checkout/purchase', purchase).then(
-                (response: any) => { // <-- Use parentheses here instead of curly braces
+                (response: any) => {
                   console.log(response.data);
                   this.modalMessage =  `Your order has been received.\nOrder tracking number: ${response.data.orderTrackingNumber}`;
                   this.openModal();
                   // reset cart
                   this.resetCart();
                 },
-                (err: any) => { // <-- Use parentheses here instead of curly braces
+                (err: any) => {
                   this.modalMessage = `There was an error: ${err.message}`;
                   this.openModal();
                 }
