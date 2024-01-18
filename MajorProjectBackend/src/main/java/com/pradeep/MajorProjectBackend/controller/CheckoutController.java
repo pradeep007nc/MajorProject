@@ -9,9 +9,11 @@ import com.stripe.exception.StripeException;
 import com.stripe.model.PaymentIntent;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@Controller
 @RequestMapping("/api/checkout")
 public class CheckoutController {
 

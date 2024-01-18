@@ -10,6 +10,5 @@ public class MajorProjectBackendApplication {
 		SpringApplication.run(MajorProjectBackendApplication.class, args);
 	}
 
-
 }
 

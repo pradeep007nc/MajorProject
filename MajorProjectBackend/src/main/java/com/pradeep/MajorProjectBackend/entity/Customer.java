@@ -1,6 +1,7 @@
 package com.pradeep.MajorProjectBackend.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import java.util.HashSet;
@@ -8,8 +9,7 @@ import java.util.Set;
 
 @Entity
 @Table(name="customer")
-@Getter
-@Setter
+@Data
 public class Customer {
 
     @Id

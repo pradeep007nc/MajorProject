@@ -11,20 +11,27 @@ import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.PaymentIntent;
 import jakarta.transaction.Transactional;
-import jdk.dynalink.linker.LinkerServices;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Service
 public class CheckoutServiceImpl implements CheckoutService {
 
     private CustomerRepository customerRepository;
 
+    private KafkaProducerService kafkaProducerService;
 
-    public CheckoutServiceImpl(CustomerRepository customerRepository, @Value("${stripe.key.secret}") String secretKey) {
+    @Autowired
+    private EmailService emailService;
+
+
+    public CheckoutServiceImpl(CustomerRepository customerRepository, @Value("${stripe.key.secret}") String secretKey, KafkaProducerService kafkaProducerService) {
         this.customerRepository = customerRepository;
+        this.kafkaProducerService = kafkaProducerService;
 
         //init stripe api with secret key
         Stripe.apiKey = secretKey;
@@ -67,8 +74,37 @@ public class CheckoutServiceImpl implements CheckoutService {
         // save to the database
         customerRepository.save(customer);
 
+        String message = mailMessageGenerator(customer, orderItems);
+
+        kafkaProducerService.sendMessage(message);
+
+        emailService.sendMail(customer.getEmail(), message);
+
         // return a response
         return new PurchaseResponse(orderTrackingNumber);
+    }
+
+    private String mailMessageGenerator(Customer customer, Set<OrderItem> orderItems) {
+        StringBuilder message = new StringBuilder("Hi " + customer.getFirstName() + "\nThanks for being our valuable customer." +
+                "\nHere are your below order details");
+
+        orderItems.forEach(data -> {
+            message.append("\nDetails ---------");
+            message.append("\nTracking Id: "+ data.getOrder().getOrderTrackingNumber());
+            message.append("\nBilling State: "+ data.getOrder().getBillingAddress().getState());
+            message.append("\nShipping City: "+ data.getOrder().getShippingAddress().getCity());
+            message.append("\nPrice: "+ data.getOrder().getTotalPrice());
+            Date date = new Date();
+            message.append("\nPurchase date: "+ date.getYear()+":"+ date.getMonth()+":"+date.getDay());
+
+//            message.append("\nOrderDetails ---------\n");
+//            data.getOrder().getOrderItems().forEach(data2 -> {
+//                message.append("\nOrder Id: "+ data2.getId());
+//                message.append("\nOrder Quantity: "+ data2.getQuantity());
+//            });
+        });
+
+        return message.toString();
     }
 
     @Override
