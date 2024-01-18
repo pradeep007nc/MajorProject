@@ -24,6 +24,7 @@ import { CheckoutGuard } from './gaurds/checkout.gaurd';
 import { CommonModule } from '@angular/common';
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
 import { AuthInterceptorService } from './services/auth-interceptor.service';
+import { AnalyticsComponent } from './components/analytics/analytics.component';
 
 //defining the routes
 const routes: Routes = [
@@ -37,6 +38,7 @@ const routes: Routes = [
   {path: 'category/:id', component: ProductListComponent},
   {path: 'category', component: ProductListComponent},
   {path: 'products', component: ProductListComponent},
+  {path: 'analytics', component: AnalyticsComponent},
   {path: '',  redirectTo: '/products', pathMatch: 'full'},
   {path: '**', redirectTo: '/products', pathMatch: 'full'}
 ];
@@ -56,7 +58,9 @@ const routes: Routes = [
     CartDetailsComponent,
     CheckoutComponent,
     MembersComponent,
-    NavbarComponent
+    NavbarComponent,
+    AnalyticsComponent,
+    AnalyticsComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

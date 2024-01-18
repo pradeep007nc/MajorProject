@@ -32,7 +32,6 @@ export class OrderHistoryComponent implements OnInit{
       }
     );
 
-    console.log(this.orderHistory);
   }
 
 }

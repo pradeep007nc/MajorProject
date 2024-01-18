@@ -1,8 +1,10 @@
+import { Order } from './../common/order';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { OrderHistory } from '../common/order-history';
 import { environment } from 'src/environments/environment.development';
+import { OrderItem } from '../common/order-item';
 
 
 @Injectable({
@@ -21,6 +23,13 @@ export class OrderHistoryService {
 
     return this.httpClient.get<GetResponseOrderHistory>(orderHistoryUrl);
   }
+
+  getOrderItemByCustomerEmail(theEmail: string): Observable<GetResponseOrderItemsByCustomer>{
+       // need to build URL based on the customer email
+       const orderHistoryUrl = `${this.orderUrl}/search/findByCustomerEmailOrderByDateCreatedDesc?email=${theEmail}`;
+       return this.httpClient.get<GetResponseOrderItemsByCustomer>(orderHistoryUrl);
+  }
+
 }
 
 interface GetResponseOrderHistory {
@@ -28,3 +37,14 @@ interface GetResponseOrderHistory {
     orders: OrderHistory[];
   }
 }
+
+interface GetResponseOrderItemsByCustomer{
+  _embedded:{
+    orders: order[];
+  }
+}
+
+interface order{
+  orderItems: OrderItem;
+}
+
