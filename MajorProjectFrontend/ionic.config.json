@@ -1,0 +1,7 @@
+{
+  "name": "FrontendSmartCommerce",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

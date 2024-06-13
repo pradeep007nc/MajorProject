@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Chart, ChartConfiguration } from 'chart.js';
+import { environment } from './../../../environments/environment';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { OrderItem } from 'src/app/common/order-item';
+import { ProductAnalyticsService } from 'src/app/services/analytics/product-analytics.service';
 import { OrderHistoryService } from 'src/app/services/order-history.service';
 
 @Component({
@@ -7,11 +10,14 @@ import { OrderHistoryService } from 'src/app/services/order-history.service';
   templateUrl: './analytics.component.html',
   styleUrls: ['./analytics.component.css']
 })
-export class AnalyticsComponent implements OnInit {
-  orderItems: OrderItem[] = [];
+export class AnalyticsComponent implements OnInit, OnChanges {
 
-  constructor(private orderHistoryService: OrderHistoryService) {}
+  constructor(private analyticsService: ProductAnalyticsService) {}
+  ngOnChanges(changes: SimpleChanges): void {
+  }
 
+
+  categoryDataPieChart!: Map<string, number>;
   storage: Storage = sessionStorage;
 
   ngOnInit(): void {
@@ -21,30 +27,20 @@ export class AnalyticsComponent implements OnInit {
 
 
   private getOrderItemsByCustomer() {
-    const email: string = this.storage.getItem('userEmail')!;
-    this.orderItems = [];
-
-    this.orderHistoryService.getOrderItemByCustomerEmail(email).subscribe(
-      data => {
-        if (data._embedded && data._embedded.orders) {
-          // Flatten the array of orderItems from each order
-          this.orderItems = data._embedded.orders
-            .map(order => order.orderItems)
-            .flat();
-
-          // Log the order items
-          console.log('Order Items:', this.orderItems);
-        } else {
-          console.log('No orders found for the customer');
+    const email: string = this.storage.getItem('userEmail')!.trim().replace(/"/g, '');
+    this.analyticsService.findProductCategoryForAnalytics(email)
+      .subscribe(
+        (data: Map<string, number>) => {
+          this.categoryDataPieChart = data;
+        },
+        (error) => {
+          console.error('Error fetching category data:', error);
         }
-      },
-      error => {
-        console.error("Error fetching order items:", error);
-      }
-    );
+      );
   }
 
-  clickCheck() {
-    console.log('Clicked! Order Items:', this.orderItems);
+  clickCheck(){
+    console.log(this.categoryDataPieChart)
   }
+
 }

@@ -4,7 +4,9 @@ com/pradeep/MajorProjectBackend/entity/ProductCategory.class
 com/pradeep/MajorProjectBackend/service/CheckoutService.class
 com/pradeep/MajorProjectBackend/entity/Customer.class
 com/pradeep/MajorProjectBackend/entity/SecurityUser/User$UserBuilder.class
+com/pradeep/MajorProjectBackend/service/KafkaProducerService.class
 com/pradeep/MajorProjectBackend/dto/SecuirtyDto/UserDto.class
+com/pradeep/MajorProjectBackend/service/EmailService.class
 com/pradeep/MajorProjectBackend/dto/SecuirtyDto/SignupDto.class
 com/pradeep/MajorProjectBackend/config/MyDataRestConfig.class
 com/pradeep/MajorProjectBackend/config/SecurityConfig/PasswordConfig.class
@@ -21,6 +23,7 @@ com/pradeep/MajorProjectBackend/config/SecurityConfig/UserAuthenticationEntryPoi
 com/pradeep/MajorProjectBackend/controller/SecurityController/MessagesController.class
 com/pradeep/MajorProjectBackend/Mappers/UserMapper.class
 com/pradeep/MajorProjectBackend/service/SecurityUserService/UserService.class
+com/pradeep/MajorProjectBackend/service/AnalyticsService.class
 com/pradeep/MajorProjectBackend/Mappers/UserMapperImpl.class
 com/pradeep/MajorProjectBackend/dao/SecurityRepo/UserRepository.class
 com/pradeep/MajorProjectBackend/entity/Product.class
@@ -37,6 +40,7 @@ com/pradeep/MajorProjectBackend/dao/ProductCategoryRepository.class
 com/pradeep/MajorProjectBackend/dto/SecuirtyDto/ErrorDto.class
 com/pradeep/MajorProjectBackend/dto/PurchaseResponse.class
 com/pradeep/MajorProjectBackend/dao/ProductRepository.class
+com/pradeep/MajorProjectBackend/controller/AnalyticsController.class
 com/pradeep/MajorProjectBackend/entity/SecurityUser/User.class
 com/pradeep/MajorProjectBackend/config/SecurityConfig/JwtAuthFilter.class
 com/pradeep/MajorProjectBackend/dto/Purchase.class

@@ -5,23 +5,225 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54d032c6-fa49-4d25-a19f-c31b24589559" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/service/KafkaProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/controller/AnalyticsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/service/AnalyticsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/capacitor.build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/java/dev/pradeep/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable-land-hdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable-land-mdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable-land-xhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable-land-xxhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable-land-xxxhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable-port-hdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable-port-mdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable-port-xhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable-port-xxhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable-port-xxxhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/drawable/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/values/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/main/res/xml/file_paths.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/capacitor.settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/android/variables.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/capacitor.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ionic.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App/Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App/Assets.xcassets/Splash.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/App/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MajorProjectFrontend/ios/App/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/MajorProjectBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/MajorProjectBackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/config/SecurityConfig/UserAuthProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/config/SecurityConfig/UserAuthProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/controller/CheckoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/controller/CheckoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/service/CheckoutServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/service/CheckoutServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/config/MyAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/config/MyAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dao/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dao/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dao/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pradeep/MajorProjectBackend/dao/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/config/MyAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/config/MyAppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/config/MyDataRestConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/config/MyDataRestConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/dao/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/dao/OrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/dao/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/dao/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/dto/Purchase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/dto/Purchase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/entity/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/entity/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/entity/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/service/CheckoutServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pradeep/MajorProjectBackend/service/CheckoutServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/pradeep/MajorProjectBackend/Mappers/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/pradeep/MajorProjectBackend/Mappers/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/logo1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/books/book_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/coffeemugs/coffemugs_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/luggagetags/luggagetags_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/mousepads/mousepads_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/assets/images/products/placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/bootstrap-icons.02685dabe0850e40.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/bootstrap-icons.8463cb1e163733b5.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-brands-400.9a905705860d0777.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-brands-400.b6033b540dd66f84.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-regular-400.3580b4a95c9bb1d5.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-regular-400.67a0fb748649533d.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-solid-900.6a8db53d80e9da0c.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-solid-900.fd0b155cd663a8fa.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-v4compatibility.65fc685fbd13fc85.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/fa-v4compatibility.e4efb16c858fae78.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/main.070f509462a0a1d0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/polyfills.d720e4a8fbac6603.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/runtime.317faf198c43b09a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/scripts.0475a02af0ae305a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/docs/styles.ee4946b5efc48ca5.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/components/order-history/order-history.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/components/order-history/order-history.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/components/product-category-menu/product-category-menu.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/components/product-category-menu/product-category-menu.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/components/product-category-menu/product-category-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/components/product-category-menu/product-category-menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/order-history.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/services/order-history.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/components/analytics/analytics.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/components/analytics/analytics.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/components/analytics/analytics.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MajorProjectFrontend/src/app/components/analytics/analytics.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +247,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -67,6 +269,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/pilli007/Documents/MajorProject/MajorProjectBackend&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
@@ -75,8 +278,7 @@
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   },
   &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
-    ]
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
 }</component>
   <component name="RecentsManager">

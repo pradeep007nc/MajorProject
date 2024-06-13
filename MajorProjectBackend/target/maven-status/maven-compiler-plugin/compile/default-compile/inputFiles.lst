@@ -1,6 +1,7 @@
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/service/KafkaProducerService.java
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/config/SecurityConfig/RestExceptionHandler.java
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dao/CustomerRepository.java
+/home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/controller/AnalyticsController.java
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dao/SecurityRepo/UserRepository.java
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/Exceptions/AppException.java
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dto/PurchaseResponse.java
@@ -21,6 +22,7 @@
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dto/SecuirtyDto/UserDto.java
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/config/SecurityConfig/WebConfig.java
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/MajorProjectBackendApplication.java
+/home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/service/AnalyticsService.java
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/controller/CheckoutController.java
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/dto/PaymentInfo.java
 /home/pilli007/Documents/MajorProject/MajorProjectBackend/src/main/java/com/pradeep/MajorProjectBackend/controller/SecurityController/MessagesController.java

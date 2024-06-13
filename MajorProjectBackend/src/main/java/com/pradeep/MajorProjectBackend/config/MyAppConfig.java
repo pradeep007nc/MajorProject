@@ -16,9 +16,17 @@ public class MyAppConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry cors) {
+        // Log allowed origins for debugging
+        for (String origin : theAllowedOrigins) {
+            System.out.println("Allowed Origin: " + origin);
+        }
 
         // set up cors mapping
-        cors.addMapping(basePath + "/**").allowedOrigins(theAllowedOrigins);
+        cors.addMapping(basePath + "/**")
+                .allowedOrigins(theAllowedOrigins)
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowedHeaders("*")
+                .allowCredentials(true);
     }
 }
 

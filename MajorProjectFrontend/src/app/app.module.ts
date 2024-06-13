@@ -25,6 +25,7 @@ import { CommonModule } from '@angular/common';
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
 import { AuthInterceptorService } from './services/auth-interceptor.service';
 import { AnalyticsComponent } from './components/analytics/analytics.component';
+import { PiechartComponent } from './components/analytics/piechart/piechart.component';
 
 //defining the routes
 const routes: Routes = [
@@ -60,7 +61,8 @@ const routes: Routes = [
     MembersComponent,
     NavbarComponent,
     AnalyticsComponent,
-    AnalyticsComponent
+    AnalyticsComponent,
+    PiechartComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
